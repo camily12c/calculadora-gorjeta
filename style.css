@@ -35,6 +35,7 @@ main {
     background: var(--white);
     padding: 3.2rem 2.4rem;
     border-radius: 2.5rem 2.5rem 0 0;
+    max-width: 92rem;
 }
 
 .info{
@@ -116,8 +117,8 @@ main {
     background: var(--sherpa-blue);
     border-radius: 1.5rem ;
     padding: 2.4rem;
-}
 
+    
 .amount
 .total{
     display: flex;
@@ -151,3 +152,55 @@ button{
     color: var(--sherpa-blue);
     font-weight: 700;
 }
+}
+
+@media(min-width: 980px) {
+    main{
+        display:flex;
+        margin-inline: auto;
+        gap:4.8rem;
+        padding: 4.8rem;
+        border-radius: 2.5rem;
+
+        section{
+            width:100%;
+        }
+
+        .info .tip div{
+            grid-template-columns: repeat(3, 1fr);
+
+         button::hover{
+            backgroud: var(--topaz);
+            cursor:pointer;
+            transition: .5s
+            }
+        }
+
+        input::webkit-inner-spin-button,
+        input::webkit-outer-spin-button{
+            display:none;
+        }
+         .results{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+
+           .amount p,
+           .total p {
+            font-size: 1.6rem;
+           }
+
+           .amount strong,
+           .toal strong {
+           font-size: 4.8rem;
+           }
+           
+            button:hover{
+                background: var(--water-leaf);
+                cursor:pointer;
+                transition: .5s;
+            }
+
+         }
+    }
+ }
