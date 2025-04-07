@@ -15,8 +15,7 @@ function receiveBillValue() {
 }
 
 function receiveNumberOfPeopleValue() {
-    numberOfPeople = numberOfPeopleInput.valueAsNumber
-    calculate()
+    tipPercentage = value / 100
 
 }
 

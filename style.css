@@ -157,6 +157,10 @@ button{
     font-weight: 700;
 }
 }
+input::webkit-inner-spin-button,
+input::webkit-outer-spin-button{
+    display:none;
+}
 
 @media(min-width: 980px) {
     main{
@@ -180,9 +184,6 @@ button{
             }
         }
 
-        input::webkit-inner-spin-button,
-        input::webkit-outer-spin-button{
-            display:none;
         }
          .results{
            display: flex;
@@ -207,4 +208,4 @@ button{
 
          }
     }
- }
+ 
